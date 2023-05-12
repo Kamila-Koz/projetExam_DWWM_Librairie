@@ -23,14 +23,14 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #91d8e38f">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Alpha-Bêtise</a>
+                    <a class="navbar-brand" href="home">Alpha-Bêtise</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                                <a class="nav-link active" aria-current="page" href="home">Accueil</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Conseils de lectures</a>
@@ -52,15 +52,15 @@
                         
                         <div class="text-end">
             
-                            {# {% if app.user %}
+                            {% if app.user %}
                                 <a href="#" class="btn btn-light me-2">Mon compte</a>
                                 <a href="{{ path('app_logout') }}" class="btn btn-warning">Déconnection</a>
                             
                             {% else %}
             
-                                <a href="{{ path('app_register') }}" class="btn btn-light">Inscription</a> 
+                                {# <a href="{{ path('app_register') }}" class="btn btn-light">Inscription</a>  #}
                                 <a href="{{ path('app_login') }}" class="btn btn-info">Connexion</a>     
-                            {% endif %} #}
+                            {% endif %}
                             
                         </div>
                     </div>
@@ -73,7 +73,7 @@
         <footer>
             <ul class="nav justify-content-center" style="background-color: #91d8e38f">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                    <a class="nav-link active" aria-current="page" href="home">Accueil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Conseils de lectures</a>
